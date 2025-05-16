@@ -12,6 +12,3 @@ Thumbs.db
 .vscode/
 *.sublime-project
 *.sublime-workspace
-
-# Node modules if you add them later
-node_modules/

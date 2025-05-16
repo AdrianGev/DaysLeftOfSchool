@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHS Countdown</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FHS Countdown</h1>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="seniorToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Are you a senior?</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="countdown-section">
+                <h2 id="lastDayTitle">Last Day of School: June 13th, 2025</h2>
+                <div class="countdown-container" id="lastDayCountdown">
+                    <div class="countdown-item">
+                        <span id="days">--</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">--</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">--</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">--</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="countdown-section">
+                <h2>School Time Remaining</h2>
+                <div class="countdown-container" id="schoolHoursCountdown">
+                    <div class="countdown-item">
+                        <span id="schoolDays">--</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="schoolHours">--</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="schoolMinutes">--</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="schoolSeconds">--</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="countdown-section">
+                <h2>Total School Days Remaining</h2>
+                <div class="countdown-container weekends-container">
+                    <div class="countdown-item large-count">
+                        <span id="schoolDaysTotal">--</span>
+                        <span class="label">School Days</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="countdown-section">
+                <h2>Weekends Remaining</h2>
+                <div class="countdown-container weekends-container">
+                    <div class="countdown-item large-count">
+                        <span id="weekends">--</span>
+                        <span class="label">Weekends</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="countdown-section">
+                <h2>Final Exams Countdown</h2>
+                <div class="countdown-container" id="examsCountdown">
+                    <div class="countdown-item">
+                        <span id="examDays">--</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="examHours">--</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="examMinutes">--</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="examSeconds">--</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="countdown-section">
+                <h2>School Year Progress</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" id="yearProgress"></div>
+                    </div>
+                    <div class="progress-percentage">
+                        <span id="progressPercent">--</span>% Complete
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created by Adrian Gevorgyan - For FHS Students - (2024-2025)</p>
+        </footer>
+    </div>
+
+    <script src="script.js?v=1.2"></script>
+</body>
+</html>
